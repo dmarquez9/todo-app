@@ -1,0 +1,10 @@
+.btnToggler {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.btnToggler:hover, .btnToggler:focus {
+  outline: 0;
+}
