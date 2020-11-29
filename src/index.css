@@ -15,11 +15,12 @@ body, html, #root {
 /* Colors primary */
 body {
   --colors-primary: hsl(220, 98%, 61%);
-  --colors-check-bg: linear-gradient(hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+  --colors-check-bg: linear-gradient(90deg, hsl(192, 100%, 67%) 0%,hsl(280, 87%, 65%) 100%);
 }
 
 /* Theme light colors & bg's */
 body[data-theme='light'] {
+  --colors-box-bg: hsl(0, 0%, 98%);  
   --colors-theme-primary: hsl(0, 0%, 98%);
   --colors-theme-secondary: hsl(236, 33%, 92%);
   --colors-light-gray-blue: hsl(233, 11%, 84%);
@@ -33,6 +34,7 @@ body[data-theme='light'] {
 
 /* Theme dark colors & bg's */
 body[data-theme='dark'] {
+  --colors-box-bg:  hsl(235, 24%, 19%);  
   --colors-theme-primary: hsl(235, 21%, 11%);
   --colors-theme-secondary: hsl(235, 24%, 19%);
   --colors-light-gray-blue: hsl(234, 39%, 85%);
