@@ -1,13 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body, html, #root {
+  height: 100%;
+}
+
+/* Colors primary */
+body {
+  --colors-primary: hsl(220, 98%, 61%);
+  --colors-check-bg: linear-gradient(hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+}
+
+/* Theme light colors & bg's */
+body[data-theme='light'] {
+  --colors-theme-primary: hsl(0, 0%, 98%);
+  --colors-theme-secondary: hsl(236, 33%, 92%);
+  --colors-light-gray-blue: hsl(233, 11%, 84%);
+  --colors-light-gray-blue-hover: hsl(233, 11%, 84%);
+  --colors-dark-gray-blue: hsl(236, 9%, 61%);
+  --colors-very-dark-gray-blue: hsl(235, 19%, 35%);
+  --colors-very-dark-gray-blue-secondary: hsl(235, 19%, 35%);
+  --background-image: url('./assets/bg-desktop-light.jpg');
+  --background-image-mobile: url('./assets/bg-mobile-light.jpg');
+}
+
+/* Theme dark colors & bg's */
+body[data-theme='dark'] {
+  --colors-theme-primary: hsl(235, 21%, 11%);
+  --colors-theme-secondary: hsl(235, 24%, 19%);
+  --colors-light-gray-blue: hsl(234, 39%, 85%);
+  --colors-light-gray-blue-hover: hsl(236, 33%, 92%);
+  --colors-dark-gray-blue: hsl(234, 11%, 52%);
+  --colors-very-dark-gray-blue: hsl(233, 14%, 35%);
+  --colors-very-dark-gray-blue-secondary: hsl(237, 14%, 26%);
+  --background-image: url('./assets/bg-desktop-dark.jpg');
+  --background-image-mobile: url('./assets/bg-mobile-dark.jpg');
 }
