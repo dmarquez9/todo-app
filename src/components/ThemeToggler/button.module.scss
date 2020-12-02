@@ -3,8 +3,8 @@
   border: none;
   padding: 0;
   cursor: pointer;
-}
 
-.btnToggler:hover, .btnToggler:focus {
-  outline: 0;
+  &:hover, &:focus {
+    outline: 0;
+  }
 }

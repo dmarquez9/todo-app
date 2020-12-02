@@ -1,0 +1,29 @@
+.todo {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+
+  .text {
+    flex: 1;
+    font-size: 16px;
+  }
+
+  .btnClose {
+    opacity: 0;
+    background-color: transparent;
+    border: none;
+    transition: ease .2s all;
+  }
+
+  & + .todo {
+    border-top: 1px solid var(--colors-light-gray-blue);
+  }
+
+  &:hover .btnClose {
+    opacity: 1;
+  }  
+}
+
+.completedTodo .text {
+  text-decoration: line-through;
+}

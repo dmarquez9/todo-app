@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Checkbox from '../Checkbox'
-import styles from './form.module.css'
+import styles from './form.module.scss'
 
 function TodoForm ({ addTodo }) {
   const [value, setValue] = useState('')

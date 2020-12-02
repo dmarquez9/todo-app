@@ -6,22 +6,22 @@
   padding: 15px;
   align-items: center;
   margin-bottom: 24px;
-}
 
-.todoForm > input {
-  background-color: transparent;
-  border: none;
-  flex: 1;
-  font-size: 16px;
-}
+  & > input {
+    background-color: transparent;
+    border: none;
+    flex: 1;
+    font-size: 16px;
 
-.todoForm > input:hover, .todoForm > input:focus {
-  outline: 0;
-}
+    &:hover, &:focus {
+      outline: 0;
+    }
 
-.todoForm > input::placeholder {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 16px;
+    &::placeholder {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 16px;
+    }
+  }
 }
 
 body[data-theme='dark'] .todoForm > input,

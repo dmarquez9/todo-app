@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-import styles from './button.module.css';
+import styles from './button.module.scss';
 import { ReactComponent as DarkMode } from '../../assets/icon-moon.svg';
 import { ReactComponent as LightMode } from '../../assets/icon-sun.svg';
 
