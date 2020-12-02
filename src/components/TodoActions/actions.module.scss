@@ -1,0 +1,36 @@
+.actionList {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  font-size: 14px;
+  border-top: 1px solid var(--colors-light-gray-blue);
+
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:hover, &:focus {
+      outline: 0;
+    }
+  }
+
+  .filters {
+    display: flex;
+    flex: 1;
+    font-weight: bold;
+    justify-content: center;
+    
+    button {
+      font-weight: bold;
+
+      &.active {
+        color: var(--colors-primary);
+      }
+    }
+
+    button + button {
+      margin-left: 5px;
+    }
+  }
+}

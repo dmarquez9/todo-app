@@ -39,6 +39,9 @@ function TodoReducer(state, action) {
         return {...todo, isCompleted: !todo.isCompleted}
       });
 
+    case 'CLEAR_COMPLETED':
+      return state.filter(todo => todo.isCompleted === false);
+
     case 'MOVE_TODO': {
       const data = [...state]
 

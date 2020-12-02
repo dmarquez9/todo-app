@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   padding: 15px;
+  cursor: move;
 
   .text {
     flex: 1;
@@ -13,6 +14,7 @@
     background-color: transparent;
     border: none;
     transition: ease .2s all;
+    cursor: pointer;
   }
 
   & + .todo {
