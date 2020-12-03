@@ -3,15 +3,27 @@
   align-items: center;
   padding: 15px;
   font-size: 14px;
-  border-top: 1px solid var(--colors-light-gray-blue);
+  border-top: 1px solid var(--color-border);
+  color: var(--colors-action-text);
+
+  > span, > button {
+    width: 120px;
+  }
+
+  > button {
+    text-align: right;
+  }
 
   button {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    color: var(--colors-action-text);
+    font-family: 'Josefin Sans', sans-serif;
 
     &:hover, &:focus {
       outline: 0;
+      color: var(--colors-action-text-hover);
     }
   }
 
@@ -23,6 +35,7 @@
     
     button {
       font-weight: bold;
+      font-size: 14px;
 
       &.active {
         color: var(--colors-primary);

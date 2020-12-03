@@ -41,6 +41,7 @@
     background: transparent;
     border-radius: 100%;
     transition: all .2s ease;
+    box-shadow: var(--checkmark-box-shadow);
     
     /* Style the checkmark/indicator */
     &:after {
@@ -62,12 +63,4 @@
   &:hover input ~ .checkmark {
     box-shadow: 0 0 0 1px var(--colors-primary);
   }
-}
-
-body[data-theme='light'] .checkmark {
-  box-shadow: 0 0 0 1px rgba(0,0,0, .2);
-}
-
-body[data-theme='dark'] .checkmark {
-  box-shadow: 0 0 0 1px rgba(255,255,255, .2);
 }

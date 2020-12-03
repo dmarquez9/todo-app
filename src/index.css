@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -19,15 +20,21 @@ body {
 }
 
 /* Theme light colors & bg's */
-body[data-theme='light'] {
-  --colors-box-bg: hsl(0, 0%, 98%);  
-  --colors-theme-primary: hsl(0, 0%, 98%);
-  --colors-theme-secondary: hsl(236, 33%, 92%);
-  --colors-light-gray-blue: hsl(233, 11%, 84%);
-  --colors-light-gray-blue-hover: hsl(233, 11%, 84%);
-  --colors-dark-gray-blue: hsl(236, 9%, 61%);
-  --colors-very-dark-gray-blue: hsl(235, 19%, 35%);
-  --colors-very-dark-gray-blue-secondary: hsl(235, 19%, 35%);
+body {
+  --colors-box-bg: hsl(0, 0%, 98%);
+  --checkmark-box-shadow: 0 0 0 1px hsl(233, 11%, 84%);
+  --color-placeholder-form: hsl(236, 9%, 61%);
+  --color-text-todo: hsl(235, 19%, 35%);
+  --color-text-todo-hover: hsl(235, 19%, 35%);
+  --color-border: hsl(233, 11%, 84%);
+  --color-text-todo-line-through: hsl(236, 9%, 61%);
+
+  --colors-action-text: hsl(236, 9%, 61%);
+  --colors-action-text-hover: hsl(235, 19%, 35%);
+
+  --colors-drag-text: hsl(236, 9%, 61%);
+
+  --background-color: hsl(0, 0%, 98%);
   --background-image: url('./assets/bg-desktop-light.jpg');
   --background-image-mobile: url('./assets/bg-mobile-light.jpg');
 }
@@ -35,13 +42,19 @@ body[data-theme='light'] {
 /* Theme dark colors & bg's */
 body[data-theme='dark'] {
   --colors-box-bg:  hsl(235, 24%, 19%);  
-  --colors-theme-primary: hsl(235, 21%, 11%);
-  --colors-theme-secondary: hsl(235, 24%, 19%);
-  --colors-light-gray-blue: hsl(234, 39%, 85%);
-  --colors-light-gray-blue-hover: hsl(236, 33%, 92%);
-  --colors-dark-gray-blue: hsl(234, 11%, 52%);
-  --colors-very-dark-gray-blue: hsl(233, 14%, 35%);
-  --colors-very-dark-gray-blue-secondary: hsl(237, 14%, 26%);
+  --checkmark-box-shadow: 0 0 0 1px hsl(237, 14%, 26%);
+  --color-placeholder-form: hsl(234, 11%, 52%);
+  --color-text-todo: hsl(234, 39%, 85%);
+  --color-text-todo-hover: hsl(236, 33%, 92%);
+  --color-border: hsl(237, 14%, 26%);
+  --color-text-todo-line-through: hsl(233, 14%, 35%);
+
+  --colors-action-text: hsl(234, 39%, 85%);
+  --colors-action-text-hover: hsl(236, 33%, 92%);
+
+  --colors-drag-text: hsl(234, 11%, 52%);
+
+  --background-color: hsl(235, 21%, 11%);
   --background-image: url('./assets/bg-desktop-dark.jpg');
   --background-image-mobile: url('./assets/bg-mobile-dark.jpg');
 }

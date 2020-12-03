@@ -11,7 +11,9 @@
     background-color: transparent;
     border: none;
     flex: 1;
-    font-size: 16px;
+    font-size: 18px;
+    color: var(--color-text-todo);
+    font-family: 'Josefin Sans', sans-serif;
 
     &:hover, &:focus {
       outline: 0;
@@ -19,17 +21,8 @@
 
     &::placeholder {
       font-family: 'Josefin Sans', sans-serif;
-      font-size: 16px;
+      font-size: 18px;
+      color: var(--color-placeholder-form);
     }
   }
-}
-
-body[data-theme='dark'] .todoForm > input,
-body[data-theme='dark'] .todoForm > input::placeholder {
-  color: var(--colors-light-gray-blue)
-}
-
-body[data-theme='light'] .todoForm > input,
-body[data-theme='light'] .todoForm > input::placeholder {
-  color: var(--colors-very-dark-gray-blue)
 }
